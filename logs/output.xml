@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231122 13:09:42.598" rpa="false" schemaversion="4">
+<suite id="s1" name="Suite" source="C:\Users\bianca.prestes\Desktop\CWI\AutomacaoDeTeste\Robot\sunflower\suite.robot">
+<test id="s1-t1" name="CT01-Verificar elementos da tela do aplicativo" line="12">
+<kw name="Abrir App" library="base" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=11</arg>
+<arg>deviceName=emulador</arg>
+<arg>udid=emulator-5554</arg>
+<arg>app=${EXECDIR}/app/sunflower.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231122 13:10:23.146" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231122 13:10:23.145" endtime="20231122 13:10:23.232"/>
+</kw>
+<msg timestamp="20231122 13:10:23.235" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:23.248" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.commands.getDevicePixelRatio (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\viewport.js:14:10)
+    at AndroidUiautomator2Driver.fillDeviceDetails (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:244:28)
+    at AndroidUiautomator2Driver.createSession (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:230:7)
+    at AppiumDriver.createSession (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\lib\appium.js:387:35)</msg>
+<status status="FAIL" starttime="20231122 13:09:43.607" endtime="20231122 13:10:23.253"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=My garden</arg>
+<arg>timeout=50</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20231122 13:10:23.253" endtime="20231122 13:10:23.253"/>
+</kw>
+<status status="FAIL" starttime="20231122 13:09:43.606" endtime="20231122 13:10:23.254"/>
+</kw>
+<kw name="Fechar App" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231122 13:10:23.259" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231122 13:10:23.258" endtime="20231122 13:10:23.263"/>
+</kw>
+<msg timestamp="20231122 13:10:23.266" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:23.324" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231122 13:10:23.256" endtime="20231122 13:10:23.331"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231122 13:10:23.332" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231122 13:10:23.332" endtime="20231122 13:10:23.366"/>
+</kw>
+<msg timestamp="20231122 13:10:23.371" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:23.508" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231122 13:10:23.331" endtime="20231122 13:10:23.510"/>
+</kw>
+<status status="FAIL" starttime="20231122 13:10:23.255" endtime="20231122 13:10:23.511">Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</kw>
+<status status="FAIL" starttime="20231122 13:09:43.604" endtime="20231122 13:10:23.513">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.commands.getDevicePixelRatio (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\viewport.js:14:10)
+    at AndroidUiautomator2Driver.fillDeviceDetails (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:244:28)
+    at AndroidUiautomator2Driver.createSession (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:230:7)
+    at AppiumDriver.createSession (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\lib\appium.js:387:35)
+
+Also teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</test>
+<test id="s1-t2" name="CT02-Escolher planta para meu jardim" line="17">
+<kw name="Abrir App" library="base" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=11</arg>
+<arg>deviceName=emulador</arg>
+<arg>udid=emulator-5554</arg>
+<arg>app=${EXECDIR}/app/sunflower.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231122 13:10:59.049" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231122 13:10:59.048" endtime="20231122 13:10:59.055"/>
+</kw>
+<msg timestamp="20231122 13:10:59.058" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:59.060" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.commands.getDevicePixelRatio (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\viewport.js:14:10)
+    at AndroidUiautomator2Driver.fillDeviceDetails (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:244:28)
+    at AndroidUiautomator2Driver.createSession (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:230:7)
+    at AppiumDriver.createSession (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\lib\appium.js:387:35)</msg>
+<status status="FAIL" starttime="20231122 13:10:23.546" endtime="20231122 13:10:59.064"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=My garden</arg>
+<arg>timeout=50</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20231122 13:10:59.064" endtime="20231122 13:10:59.064"/>
+</kw>
+<status status="FAIL" starttime="20231122 13:10:23.545" endtime="20231122 13:10:59.065"/>
+</kw>
+<kw name="Fechar App" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231122 13:10:59.067" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231122 13:10:59.066" endtime="20231122 13:10:59.070"/>
+</kw>
+<msg timestamp="20231122 13:10:59.073" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:59.075" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231122 13:10:59.066" endtime="20231122 13:10:59.082"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231122 13:10:59.083" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231122 13:10:59.083" endtime="20231122 13:10:59.087"/>
+</kw>
+<msg timestamp="20231122 13:10:59.090" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:59.092" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231122 13:10:59.083" endtime="20231122 13:10:59.097"/>
+</kw>
+<status status="FAIL" starttime="20231122 13:10:59.065" endtime="20231122 13:10:59.098">Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</kw>
+<status status="FAIL" starttime="20231122 13:10:23.533" endtime="20231122 13:10:59.140">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.commands.getDevicePixelRatio (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\viewport.js:14:10)
+    at AndroidUiautomator2Driver.fillDeviceDetails (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:244:28)
+    at AndroidUiautomator2Driver.createSession (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:230:7)
+    at AppiumDriver.createSession (C:\Users\bianca.prestes\Desktop\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\lib\appium.js:387:35)
+
+Also teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</test>
+<status status="FAIL" starttime="20231122 13:09:42.605" endtime="20231122 13:10:59.252"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Suite">Suite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231122 13:10:23.235" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:23.266" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:23.371" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:59.058" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:59.073" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231122 13:10:59.090" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
